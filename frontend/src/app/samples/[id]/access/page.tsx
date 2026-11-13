@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { useAuth, useCurrentUser } from '../../../../context/AuthContext';
 import { api } from '../../../../lib/api';
-import { SampleDetail, User } from '../../../../types';
+import { SampleDetail } from '../../../../types';
 import { AccessBadge } from '../../../../components/StatusBadge';
 import {
   ArrowLeft,

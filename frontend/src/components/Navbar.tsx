@@ -4,7 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { useAuth } from '../context/AuthContext';
-import { Dna, Database, Layers, LogOut, User } from 'lucide-react';
+import { Dna, Database, Layers, LogOut } from 'lucide-react';
 
 export function Navbar() {
   const pathname = usePathname();
@@ -49,8 +49,8 @@ export function Navbar() {
             </div>
           </Link>
 
-          <nav className="hidden md:flex items-center gap-1 pl-4 border-l border-zinc-800">
-            {currentUser ? (
+          {currentUser && (
+            <nav className="hidden md:flex items-center gap-1 pl-4 border-l border-zinc-800">
               <Link
                 href="/samples"
                 className={`flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium rounded-md transition-colors ${
@@ -62,20 +62,8 @@ export function Navbar() {
                 <Layers className="h-4 w-4" />
                 Samples & Files
               </Link>
-            ) : (
-              <Link
-                href="/login"
-                className={`flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium rounded-md transition-colors ${
-                  pathname === '/login'
-                    ? 'bg-zinc-800/80 text-white'
-                    : 'text-zinc-400 hover:text-zinc-200 hover:bg-zinc-900'
-                }`}
-              >
-                <User className="h-4 w-4" />
-                Login
-              </Link>
-            )}
-          </nav>
+            </nav>
+          )}
         </div>
 
         <div className="flex items-center gap-3">

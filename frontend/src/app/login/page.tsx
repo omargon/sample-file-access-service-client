@@ -10,14 +10,13 @@ import {
   ArrowRight,
   Key,
   CheckCircle2,
-  Sparkles,
   Lock,
   FileCheck,
 } from 'lucide-react';
 
 export default function LoginPage() {
   const router = useRouter();
-  const { currentUser, setCurrentUser, availableUsers } = useAuth();
+  const { setCurrentUser, availableUsers } = useAuth();
   const [selectedUserId, setSelectedUserId] = useState('user-1');
 
   const selectedUser = availableUsers.find((u) => u.id === selectedUserId);
@@ -82,10 +81,6 @@ export default function LoginPage() {
     <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
       {/* Hero */}
       <div className="text-center max-w-2xl mx-auto mb-10">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 mb-3">
-          <Sparkles className="h-3.5 w-3.5" />
-          <span>View 1: Persona Authentication Portal</span>
-        </div>
         <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Sign in</h1>
         <p className="mt-2 text-sm text-zinc-400">
           Choose a user account to access samples and files with its permissions.
@@ -198,12 +193,12 @@ export default function LoginPage() {
       {/* Persona Quick Selector Grid */}
       <div className="mt-12">
         <h2 className="text-xs font-semibold uppercase tracking-wider text-zinc-500 text-center mb-4">
-          Or Click A Card to Switch Immediately
+          Or click a card to sign in
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {availableUsers.map((user) => {
             const meta = getPersonaMeta(user.id, user.isPipeline);
-            const isCurrent = currentUser?.id === user.id;
+            const isSelected = selectedUserId === user.id;
 
             return (
               <div
@@ -214,7 +209,7 @@ export default function LoginPage() {
                   router.push('/samples');
                 }}
                 className={`cursor-pointer group relative rounded-xl border p-5 transition-all ${
-                  isCurrent
+                  isSelected
                     ? 'border-indigo-500/50 bg-indigo-500/5 ring-1 ring-indigo-500/30'
                     : 'border-zinc-800 bg-zinc-900/50 hover:bg-zinc-800/40 hover:border-zinc-700'
                 }`}
