@@ -1,0 +1,38 @@
+{
+  "name": "sample-file-access-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts",
+    "lint": "eslint .",
+    "test": "tsx --test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omargon/sample-file-access-service.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/omargon/sample-file-access-service/issues"
+  },
+  "homepage": "https://github.com/omargon/sample-file-access-service#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.6",
+    "@types/supertest": "^7.2.1",
+    "eslint": "^10.14.0",
+    "supertest": "^7.3.2",
+    "tsx": "^4.23.15",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.2"
+  },
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
