@@ -91,7 +91,7 @@ export default function SampleAccessPage() {
       <div className="pb-6 border-b border-zinc-800">
         <div className="flex items-center gap-2">
           <span className="text-xs font-semibold uppercase tracking-wider text-indigo-400">
-            View 4: Access Governance
+            Access Governance
           </span>
           <span className="text-zinc-600">&bull;</span>
           <span className="text-xs text-zinc-400">

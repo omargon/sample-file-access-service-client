@@ -128,7 +128,7 @@ export default function SampleFilesPage() {
         <div>
           <div className="flex items-center gap-2">
             <span className="text-xs font-semibold uppercase tracking-wider text-indigo-400">
-              View 3: Files & QC Inspector
+              Files & QC Inspector
             </span>
             <span className="text-zinc-600">&bull;</span>
             <span className="text-xs text-zinc-400">
@@ -184,7 +184,7 @@ export default function SampleFilesPage() {
               className="flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-medium shadow-lg shadow-indigo-600/30 transition-all"
             >
               <UserPlus className="h-3.5 w-3.5" />
-              Manage Access (View 4)
+              Manage Access
             </Link>
           ) : (
             <Link

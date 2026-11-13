@@ -41,7 +41,7 @@ export function Navbar() {
             </div>
             <div>
               <span className="text-base font-semibold text-zinc-100 group-hover:text-white transition-colors">
-                BioAccess
+                SampleAccess
               </span>
               <span className="ml-1.5 inline-block rounded bg-indigo-500/10 px-1.5 py-0.5 text-[10px] font-mono text-indigo-400 border border-indigo-500/20">
                 POC

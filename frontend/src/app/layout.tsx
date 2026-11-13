@@ -4,7 +4,7 @@ import { AuthBoundary, AuthProvider } from '../context/AuthContext';
 import { Navbar } from '../components/Navbar';
 
 export const metadata: Metadata = {
-  title: 'BioAccess - Sample & File Access Service POC',
+  title: 'SampleAccess - Sample & File Access Service POC',
   description: 'Modern Proof of Concept client for sample-file-access-service',
 };
 

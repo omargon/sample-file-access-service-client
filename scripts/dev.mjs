@@ -1,6 +1,6 @@
 import { spawn } from 'node:child_process';
 
-console.log('\x1b[36m%s\x1b[0m', '🚀 Launching BioAccess Monorepo (Backend :3001 + Frontend :3000)...');
+console.log('\x1b[36m%s\x1b[0m', '🚀 Launching SampleAccess Monorepo (Backend :3001 + Frontend :3000)...');
 
 const backend = spawn('npm', ['--workspace=backend', 'run', 'dev'], {
   stdio: 'inherit',

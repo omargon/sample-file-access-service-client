@@ -87,7 +87,7 @@ export default function SamplesPage() {
         <div>
           <div className="flex items-center gap-2">
             <span className="text-xs font-semibold uppercase tracking-wider text-indigo-400">
-              View 2: Samples Catalog
+              Samples Catalog
             </span>
             <span className="text-zinc-600">&bull;</span>
             <span className="text-xs text-zinc-400">
